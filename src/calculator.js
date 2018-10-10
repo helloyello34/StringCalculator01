@@ -7,6 +7,7 @@ function Add(numbers) {
   if(numbers.some(v => v < 0)) {
     throw "Negatives not allowed:" + numbers.filter(v => v < 0);
   }
+  numbers = numbers.filter(v => v <= 1000);
   return sum(numbers);
 }
 

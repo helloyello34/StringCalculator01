@@ -57,3 +57,11 @@ test("Returns an error for two negative number", () => {
     console.log(e);
   }
 });
+
+test("Returns sum of 3 integers and one is over 1000 and one is 1000", () => {
+  try {
+    expect(calculator("1000,1001,1")).toBe(1000+1);
+  } catch (e) {
+    console.log(e);
+  }
+});
