@@ -4,6 +4,9 @@ function Add(numbers) {
   if(numbers === "") { return 0; }
   numbers = numbers.replace('\n', ',');
   numbers = numbers.split(',').map(Number);
+  if(numbers.some(v => v < 0)) {
+    throw "Negatives not allowed:" + numbers.filter(v => v < 0);
+  }
   return sum(numbers);
 }
 
