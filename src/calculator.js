@@ -2,8 +2,9 @@
 
 function Add(numbers) {
   if(numbers === "") { return 0; }
-  var nums = numbers.split(',').map(Number);
-  return sum(nums);
+  numbers = numbers.replace('\n', ',');
+  numbers = numbers.split(',').map(Number);
+  return sum(numbers);
 }
 
 function sum(numberArray) {

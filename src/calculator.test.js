@@ -17,3 +17,7 @@ test("Returns sum of two integers", () => {
 test("Returns sum of 10 numbers", () => {
   expect(calculator("1,2,3,4,5,6,7,8,9,10")).toBe(1+2+3+4+5+6+7+8+9+10);
 });
+
+test("Retruns sum of 3 integers with new line", () => {
+  expect(calculator("1\n4, 7")).toBe(1+4+7);
+});
