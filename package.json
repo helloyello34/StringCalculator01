@@ -1,0 +1,22 @@
+{
+  "name": "string-calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helloyello34/StringCalculator01.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/helloyello34/StringCalculator01/issues"
+  },
+  "homepage": "https://github.com/helloyello34/StringCalculator01#readme",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
