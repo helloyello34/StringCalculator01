@@ -13,3 +13,7 @@ test("Returns sum of one integer", () => {
 test("Returns sum of two integers", () => {
   expect(calculator("12,23")).toBe(12+23);
 });
+
+test("Returns sum of 10 numbers", () => {
+  expect(calculator("1,2,3,4,5,6,7,8,9,10")).toBe(1+2+3+4+5+6+7+8+9+10);
+});

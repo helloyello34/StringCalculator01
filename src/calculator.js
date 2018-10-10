@@ -3,10 +3,15 @@
 function Add(numbers) {
   if(numbers === "") { return 0; }
   var nums = numbers.split(',').map(Number);
-  if(nums.length == 2) {
-    return nums[0] + nums[1];
+  return sum(nums);
+}
+
+function sum(numberArray) {
+  var sum = 0;
+  for(var i = 0; i < numberArray.length; i++) {
+    sum += numberArray[i];
   }
-  return nums[0];
+  return sum;
 }
 
 module.exports = Add;
