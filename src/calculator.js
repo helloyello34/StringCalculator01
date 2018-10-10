@@ -8,6 +8,7 @@ function Add(numbers) {
     delimiter = tempArr.substring(2, tempArr.length);
     numbers = numbers.substring(tempArr.length + 1, numbers.length);
   }
+  numbers = numbers.replace(",", delimiter);
   numbers = numbers.replace("\n", delimiter);
   numbers = numbers.split(delimiter).map(Number);
   if(numbers.some(v => v < 0)) {

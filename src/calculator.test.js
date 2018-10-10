@@ -81,3 +81,11 @@ test("test using ;; as a delimiter", () => {
     console.log(e);
   }
 });
+
+test("Using another delimiter and a comma", () => {
+  try {
+    expect(calculator("//;;\n1000;12,15")).toBe(1000+12+15);
+  } catch (e) {
+  	console.log(e);
+  }
+});
