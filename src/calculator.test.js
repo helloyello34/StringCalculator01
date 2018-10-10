@@ -73,3 +73,11 @@ test("test using ; as a delimiter", () => {
     console.log(e);
   }
 });
+
+test("test using ;; as a delimiter", () => {
+  try {
+    expect(calculator("//;;\n1000;;1001;;1")).toBe(1000+1);
+  } catch (e) {
+    console.log(e);
+  }
+});
