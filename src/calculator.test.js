@@ -49,3 +49,11 @@ test("Returns an error for one negative number", () => {
     console.log(e);
   }
 });
+
+test("Returns an error for two negative number", () => {
+  try {
+    expect(calculator("1,-2\n-4")).toBe();
+  } catch(e) {
+    console.log(e);
+  }
+});
